@@ -12,6 +12,8 @@ Font for titles :
 
 - Sen : https://fonts.google.com/specimen/Sen
 
+# Icons
+
 Use font Awesome font icons :
 
 - https://fontawesome.com/
@@ -20,6 +22,7 @@ Use font Awesome font icons :
 
 - Yellow : #ffcd05
 - Black: #0a0500
+- Grey : #f7f7f7
 
 # Text
 
