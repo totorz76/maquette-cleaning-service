@@ -1,0 +1,294 @@
+css 
+/* --- Reset / Normalize de base --- */
+
+/* Box sizing global pour tous les éléments */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+body, h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd,
+ul, ol, li, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Listes sans décoration par défaut */
+ul, ol {
+  list-style: none;
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images, vidéos, SVG, canvas — afficher de façon responsive, bloc, ne pas dépasser */
+img, picture, video, svg, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inputs / Buttons / selects hériteront de la police de caractère du body */
+input, button, textarea, select {
+  font: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Rendre plus lisible / éviter débordements de texte */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Corps de page : hauteur minimum + bonne interligne */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* Décoration de texte par défaut plus propre */
+html {
+  -webkit-text-size-adjust: 100%; /* éviter redimensionnement texte sur iOS/Safari */
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+/* Font */
+
+.open-sans-website {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.sen-title {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* header */
+
+
+header {
+  position: relative;
+}
+
+main {
+  position: relative;
+}
+
+ header .container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+ filter: brightness(50%);
+ width: 100%;
+ height: 100vh;
+}
+
+
+.navbar {
+  display: flex;
+  width: 1000px;
+  height: 48px;
+  color: black;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 1rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar p span {
+  padding-left: 1rem;
+}
+
+.navbar p i {
+  color: gray;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul a {
+  padding: 15px 20px; 
+  width: fit-content;
+}
+
+.navbar ul a:hover {
+  transition: 0.3s;
+  background-color: #ffcd05;
+}
+
+.logo {
+  width: 15%;
+}
+
+.overimg {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  text-align: center;
+  position: absolute;
+}
+
+.overimg h1 {
+  font-family: Sen;
+  font-size: 50px;
+}
+
+/* appointment */
+
+.appointment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+  background-color: black;
+  width: 100%;
+}
+
+.over {
+  width: 1064px;
+  padding: 2.5rem 0;
+  position: absolute;
+  background-color: white;
+  transform: translate(-50% -50%);
+  top: 90%;
+  text-align: center;
+  z-index: 9;
+}
+
+.over h3 {
+  font-family: Sen;
+  padding-bottom: 2rem;
+  color: black;
+}
+
+.over form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.over .name,.number {
+  padding: 8px;
+  width: 230px;
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.over .button {
+  padding: 10px 2rem;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.over select {
+  border: none;
+  background-color: #f7f7f7;
+  padding: 8px;
+  width: 230px;
+  color: black;
+}
+
+
+/* service */
+
+
+.appointment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+  background-color: black;
+  width: 100%;
+  padding-top: 14rem;
+  padding-bottom: 10rem;
+  color: white;
+}
+
+.appointment p {
+  width: 550px;
+  padding-top: 1rem;
+}
+
+main .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: none;
+  width: 1064px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  gap: 1.5rem;
+  transform: translate(-50% -50%);
+  top: 80%;
+  flex-wrap: wrap;
+}
+
+.card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  z-index: 9;
+  padding: 4rem 3rem;
+  border: lightgrey 1px solid;
+  gap: 1rem;
+  width: 22%;
+}
+.overbtn {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.overbtn .b1 {
+display: block;
+padding: 10px 3rem;
+background-color: black;
+color: white;
+}
+
+.overbtn .b2 {
+  display: block;
+  padding: 10px 3rem;
+  outline: solid black 3px;
+}
