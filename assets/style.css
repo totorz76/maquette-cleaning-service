@@ -61,7 +61,7 @@ html {
 /* Font */
 
 .open-sans-website {
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -75,6 +75,14 @@ html {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+body {
+  font-family: open sans;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: sen;
 }
 
 /* header */
@@ -240,6 +248,7 @@ header img {
 .appointment p {
   width: 550px;
   padding-top: 1rem;
+  color: darkgray;
 }
 
 main .container {
@@ -278,6 +287,7 @@ main .container {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding-top: 1rem;
 }
 
 .overbtn .b1 {
@@ -291,4 +301,141 @@ color: white;
   display: block;
   padding: 10px 3rem;
   outline: solid black 3px;
+}
+
+/* article */
+
+.article {
+  margin-top: 28rem ;
+  display: flex;
+  flex-direction: column;
+  width: 1064px;
+  gap: 4rem;
+}
+
+.boxarticle {
+  display: flex;
+  flex-direction: row;
+}
+
+.rev {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.article img {
+  width: 50%;
+}
+
+.article h2 {
+  font-size: 33px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.article .desc {
+  padding: 0 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem
+}
+
+.article .rev .desc {
+  padding: 0 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+}
+
+.article .desc p {
+  padding: 0 0 1rem 0;
+}
+
+
+.article a {
+  color: white;
+  background-color: black;
+  width: fit-content;
+  padding: 10px 3rem;
+  margin-top: 1rem;
+}
+
+
+/* about */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;;
+  align-items: center;
+  padding: 5rem 0;
+  gap: 1rem;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1064px;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  outline: solid 1px lightgrey;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about .box img {
+  width: 25%;
+}
+
+/* blog */
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blog .container {
+  width: 1064px;
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+
+}
+
+.blog .box {
+  outline: 1px solid lightgrey;
+}
+
+.blog img {
+  width: 15%;
+}
+
+.blog .desc {
+  padding: 1rem 2rem;
+  font-size: 14px;
+}
+
+.blog i {
+  padding: 1rem 1rem;
+  font-size: 20px;
+  color: #ffcd05;
+}
+
+.blog .profil {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
 }
