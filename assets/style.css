@@ -153,6 +153,7 @@ header img {
 
 .logo {
   width: 15%;
+  
 }
 
 .overimg {
@@ -211,6 +212,7 @@ header img {
   width: 230px;
   border: none;
   background-color: #f7f7f7;
+  color: black;
 }
 
 .over .button {
@@ -218,6 +220,7 @@ header img {
   border: none;
   background-color: black;
   color: white;
+  z-index: 10;
 }
 
 .over select {
